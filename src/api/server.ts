@@ -44,7 +44,7 @@ export const server_calls = {
     update: async (id:string, data: any = {}) => {
         const response = await fetch(`https://whiskeycollection1.onrender.com/api/whiskeys/${id}`,
         {
-            method: 'PUT',
+            method: 'POST',
             headers: {
                 'Content-Type':'application/json',
                 'Access-Control-Allow-Origin': '*',
